@@ -52,7 +52,6 @@ void setup() {
 void loop() {
   mpu.update();
 
-  // XY축 교정
   float angleX = mpu.getAngleY() - calibrationX;
   float angleY = mpu.getAngleX() - calibrationY;
 
